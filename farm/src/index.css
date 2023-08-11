@@ -24,3 +24,7 @@ body {
   --color-subtext: #FF8A71;
   --colorWhite: #fff;
 }
+
+a{
+  text-decoration: none;
+}
