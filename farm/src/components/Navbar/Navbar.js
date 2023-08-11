@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 import { Link } from 'react-router-dom';
-import agentIcon from '../../assets/icons/person.png'
+// import agentIcon from '../../assets/icons/person.png';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -23,14 +23,14 @@ const Navbar = () => {
       </div>
       <div className="mediaNavbar-sign">
         <span  className="signIn">
-        <Link to="/login">
+        {/* <Link to="/login">
           <img className='loginIcon' src={agentIcon} alt=''/>
-        </Link>
+        </Link> */}
         </span>
        <span>
-       {/* <Link to="/signup">
-          <button type="button">Sign up</button>
-        </Link> */}
+       <Link to="/login">
+          <button type="button">Login</button>
+        </Link>
        </span>
       </div>
       <div className="mediaNavbar-menu">
