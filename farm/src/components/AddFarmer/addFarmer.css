@@ -1,0 +1,28 @@
+/*  */
+.addProduct{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.productTitle{
+    text-transform: capitalize;
+    color: #383838;
+}
+
+.noProductImg{
+    display: block;
+    margin: auto;
+    height: 30vh;
+}
+
+.noProductsText{
+    color: #383838;
+    font-size: larger;
+    text-align: center;
+}
