@@ -13,7 +13,7 @@ const SignupForm = () => (
         <input type="password" autocomplete="off" id="password" placeholder="password"/>
         <input type="text" autocomplete="off" id="number" placeholder="number"/>
         <input type="checkbox" checked class="checkBox" id="termsAndConditions"/>
-        <label for="termsAndConditions">agree to our <a href="/">terms and conditions</a></label><br/>
+        <label for="termsAndConditions">agree to our <a href="/agentadd">terms and conditions</a></label><br/>
         <input type="checkbox" class="checkBox" id="notification"/>
         <label for="notification"><a href="/">recieve upcoming offers or events</a></label>
         <button class="submitButton">Create Account</button>

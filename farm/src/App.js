@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import Login from "./routes/Login";
-import Main from "./routes/Main";
+import AgentAddup from "./routes/AgentAddup";
 import SignUp from "./routes/SignUp"
 
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/main" element={<Main />} />
+        <Route path="/agentadd" element={<AgentAddup />} />
         <Route path="/signup" element={<SignUp />} />
         
       
