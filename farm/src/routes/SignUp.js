@@ -1,10 +1,12 @@
-function SignUp() {
-    return (
-      <>
-        <div>This SignUp page</div>
-      </>
-    );
-  }
-  
-  export default SignUp;
-  
+import React from 'react';
+import SignupForm from '../components/Registration/SignupForm';
+
+function Signup() {
+  return (
+    <>
+      <SignupForm />
+    </>
+  );
+}
+
+export default Signup;
