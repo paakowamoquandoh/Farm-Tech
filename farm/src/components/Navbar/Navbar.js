@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import agentIcon from '../../assets/icons/person.png'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -13,23 +14,23 @@ const Navbar = () => {
           <h1>Excellent<i className='goldText'>Tech</i></h1>
         </div>
         <div className="mediaNavbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">Why Us</a></p>
-          <p><a href="#prospects">Prospects</a></p>
-          <p><a href="#features">Features</a></p>
-          <p><a href="#blog">Blog</a></p>
+        <p><a href="/home">Home</a></p>
+          <p><a href="/whyus">Why Us</a></p>
+          <p><a href="/prospects">Prospects</a></p>
+          <p><a href="/features">Features</a></p>
+          <p><a href="contactus">Contact Us</a></p>
         </div>
       </div>
       <div className="mediaNavbar-sign">
         <span  className="signIn">
         <Link to="/login">
-          Log In
+          <img className='loginIcon' src={agentIcon} alt=''/>
         </Link>
         </span>
        <span>
-       <Link to="/signup">
+       {/* <Link to="/signup">
           <button type="button">Sign up</button>
-        </Link>
+        </Link> */}
        </span>
       </div>
       <div className="mediaNavbar-menu">
@@ -39,11 +40,11 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="mediaNavbar-menu_container scale-up-center">
           <div className="mediaNavbar-menu_container-links">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">Why Us</a></p>
-          <p><a href="#main">Prospects</a></p>
-          <p><a href="#features">Features</a></p>
-          <p><a href="#features">Contact Us</a></p>
+          <p><a href="/home">Home</a></p>
+          <p><a href="/whyus">Why Us</a></p>
+          <p><a href="/prospects">Prospects</a></p>
+          <p><a href="/features">Features</a></p>
+          <p><a href="contactus">Contact Us</a></p>
           </div>
           <div className="mediaNavbar-menu_container-links-sign">
             <p>Sign in</p>

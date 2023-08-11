@@ -118,6 +118,19 @@
    
 }
 
+a{
+    color: var(--mainRed);
+    font-weight: 600;
+}
+
+.loginIcon{
+    height: auto;
+    width: 2rem;
+    object-fit: cover;
+}
+
+
+
 @media screen and (max-width: 1050px) {
     .mediaNavbar-links_container {
         display: none;
