@@ -1,0 +1,82 @@
+.footer{
+    padding: 4rem 6rem;
+    background-color: var(--color-footer);
+    font-family: 'Poppins', sans-serif;
+}
+
+.topside{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topside h1{
+    color: var(--colorWhite);
+}
+
+.topside p{
+    color: var(--colorWhite);
+}
+
+.topside a{
+    color: var(--colorWhite);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.topside a:hover{
+    color: teal;
+}
+
+.topside a svg:hover {
+    fill: teal;
+    stroke: 15px;
+    color: var(--colorWhite);
+  }
+
+  .bottom{
+    padding-top: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .bottom div{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .bottom h4{
+    font-size: 1.3rem;
+    padding: 1rem 0 0.8rem 0;
+    color: var(--mainRed);
+ }
+
+ .bottom a {
+    text-decoration: none;
+    color: var(--colorWhite);
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+ }
+
+ .socials{
+    display: flex;
+    flex-direction: row;
+ }
+
+ @media screen and (max-width: 850px){
+    .footer{
+        padding: 4rem 2rem;
+    }
+
+    .topside a{
+        margin: 1rem 1rem 0 0;
+    }
+
+    .bottom div{
+        width: 50%;
+    }
+ }
