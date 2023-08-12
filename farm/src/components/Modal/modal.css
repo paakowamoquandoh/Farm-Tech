@@ -1,0 +1,21 @@
+.btn-primary{
+  padding: 10px 30px;
+  text-transform: capitalize;
+  color: #fff;
+  background: #383838;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+  color: #fff;
+  background-color: var(--mainRed);
+
+}
+
+.modal-content{
+  width: 600px;
+}
