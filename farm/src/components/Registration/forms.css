@@ -8,7 +8,7 @@
     background: rgb(227,239,251);
 }
 
-.submitButton a{
+.submitButton a, #applicationFormBtn a{
     text-decoration: none;
     color: white;
 }
@@ -230,6 +230,7 @@ label a{
    cursor: pointer;
    display: block;
    font-size: larger;
+   margin-bottom: 2rem;
 }
 
 #addBusiness{
