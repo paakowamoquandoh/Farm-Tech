@@ -16,7 +16,7 @@ function HomePage() {
         text="Discover innovative solutions that revolutionize agriculture, increase yields, and ensure sustainable farming practices. Join us in shaping the future of farming with cutting-edge technology."
         btnText="Get Started"
         btnClass="homeBtn"
-        url="/signup"
+        url="/login"
         />
       <Footer />
     </>

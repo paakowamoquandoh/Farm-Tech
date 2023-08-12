@@ -5,7 +5,8 @@ import Login from "./routes/Login";
 import AgentAddup from "./routes/AgentAddup";
 import SignUp from "./routes/SignUp"
 import Dashboard from "./routes/Dashboard";
-// import { AuthProvider } from "./contexts/AuthContext";
+import ContactUs from "./routes/Contact";
+import { AuthProvider } from "./contexts/AuthContext";
 
 
 
@@ -13,12 +14,14 @@ function App() {
   return (
    
     <div className="App">
-      <Routes>
+      <AuthProvider>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/agentadd" element={<AgentAddup />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/contact" element={<ContactUs />} />
         
       
         {/* 
@@ -26,6 +29,7 @@ function App() {
         <Route path="/carrental" element={<CarRental />} />
         <Route path="/flights" element={<Flights />} /> */}
       </Routes>
+      </AuthProvider>
     </div>
      
   );

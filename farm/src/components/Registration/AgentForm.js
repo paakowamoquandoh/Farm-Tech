@@ -14,16 +14,16 @@ const AgentFrom = () => (
    </div>
 
    
-   <div id="form" class="applicationForm">
+   <div id="form" className="applicationForm">
     <input type="text" name="" id="businessName" placeholder="business name / company name / shop name"/>
     <textarea cols="30" rows="10" id="addBusiness" placeholder="address"></textarea>
     <textarea cols="30" rows="10" id="about" placeholder="about"></textarea>
     <input type="text" id="number" placeholder="number"/>
-    <input type="checkbox" checked class="checkBox" id="termsAndConditions"/>
+    <input type="checkbox" checked className="checkBox" id="termsAndConditions"/>
     <label for="termsAndConditions">agree to our <a href="/dashboard">terms and conditions</a></label><br/>
-    <input type="checkbox" checked class="checkBox" id="validInfo"/>
+    <input type="checkbox" checked className="checkBox" id="validInfo"/>
     <label for="validInfo">all info is valid</label>
-    <button class="submitButton" id="applicationFormBtn">apply</button>
+    <button className="" id="applicationFormBtn"><a href="/dashboard">apply</a></button>
    </div>
    
 </div>

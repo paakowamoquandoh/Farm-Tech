@@ -8,6 +8,11 @@
     background: rgb(227,239,251);
 }
 
+.submitButton a{
+    text-decoration: none;
+    color: white;
+}
+
 .logo{
     height: 80px;
     display: block;
@@ -17,8 +22,22 @@
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="number"],
- textarea{
+input[type="number"]{
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #383838;
+    font-size: 16px;
+    box-shadow: 04px 10px rgba(0,0,0,0.04);
+}
+
+textarea{
     display: block;
     width: 300px;
     height: 40px;
@@ -150,6 +169,7 @@ label a{
     border-radius: 10px;
     background: #fff;
     padding: 30px;
+    width: 80%;
 }
 
 .sellerHeading{
@@ -177,6 +197,10 @@ label a{
     display: none;
 }
 
+.applicationForm{
+    width: 80%;
+}
+
 .applicationForm input, textarea{
   font-weight: 500;
 }
@@ -192,8 +216,22 @@ label a{
     padding: 10px 20px;
 }
 
-.submitButton{
-    margin: 10px 0;
-    width: auto;
-    padding: 0 40px;
+#applicationFormBtn{
+   width: 100px;
+   min-width: 100px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   background: rgb(97,167,52);
+   color: #fff;
+   border-radius: 2px;
+   text-transform: capitalize;
+   border: none;
+   cursor: pointer;
+   display: block;
+   font-size: larger;
+}
+
+#addBusiness{
+    margin-bottom: 1rem;
 }

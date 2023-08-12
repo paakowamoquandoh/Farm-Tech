@@ -8,11 +8,11 @@ const LoginForm = () => (
     <img src={brandImg} className="logo" alt=""/>
     </div>
     <div>
-    <input type="email" autocomplete="off" id="email" placeholder="email"/>
-    <input type="password" autocomplete="off" id="password" placeholder="password"/>
-    <button className="submitButton">Log In</button>
+    <input type="email" autocomplete="off" id="email" placeholder="email" required/>
+    <input type="password" autocomplete="off" id="password" placeholder="password" required/>
+    <button className="submitButton"><a href="/agentadd">Log In</a></button>
     </div>
-    <a href="/signup" className="loginLink">Dont have an account? Create One</a>
+    <a href="/contact" className="loginLink">Dont have an account? Contact us for a link</a>
   </div>
 );
 
