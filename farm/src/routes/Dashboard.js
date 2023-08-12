@@ -1,4 +1,5 @@
 import React from 'react';
+import AddFarmer from '../components/AddFarmer/AddFarmer';
 
 function Dashboard() {
   return (

@@ -4,6 +4,7 @@ import Home from "./routes/Home";
 import Login from "./routes/Login";
 import AgentAddup from "./routes/AgentAddup";
 import SignUp from "./routes/SignUp"
+import Dashboard from "./routes/Dashboard";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/agentadd" element={<AgentAddup />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         
       
         {/* 

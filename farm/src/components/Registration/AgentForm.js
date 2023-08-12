@@ -20,7 +20,7 @@ const AgentFrom = () => (
     <textarea cols="30" rows="10" id="about" placeholder="about"></textarea>
     <input type="text" id="number" placeholder="number"/>
     <input type="checkbox" checked class="checkBox" id="termsAndConditions"/>
-    <label for="termsAndConditions">agree to our <a href="/">terms and conditions</a></label><br/>
+    <label for="termsAndConditions">agree to our <a href="/dashboard">terms and conditions</a></label><br/>
     <input type="checkbox" checked class="checkBox" id="validInfo"/>
     <label for="validInfo">all info is valid</label>
     <button class="submitButton" id="applicationFormBtn">apply</button>
