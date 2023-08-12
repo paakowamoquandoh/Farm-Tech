@@ -6,7 +6,6 @@ import AgentAddup from "./routes/AgentAddup";
 import SignUp from "./routes/SignUp"
 import Dashboard from "./routes/Dashboard";
 import ContactUs from "./routes/Contact";
-import { AuthProvider } from "./contexts/AuthContext";
 
 
 
@@ -14,7 +13,7 @@ function App() {
   return (
    
     <div className="App">
-      <AuthProvider>
+     
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -29,7 +28,7 @@ function App() {
         <Route path="/carrental" element={<CarRental />} />
         <Route path="/flights" element={<Flights />} /> */}
       </Routes>
-      </AuthProvider>
+   
     </div>
      
   );
