@@ -1,38 +1,39 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import "./table.css"
 
 function ResponsiveExample() {
+  const headerNames = ['#', 'Header 1', 'Header 2', 'Header 3', 'Header 4', 'Header 5', 'Header 6'];
+
+  const tableData = [
+    [1, 'Data 1-1', 'Data 1-2', 'Data 1-3', 'Data 1-4', 'Data 1-5', 'Data 1-6'],
+    [2, 'Data 2-1', 'Data 2-2', 'Data 2-3', 'Data 2-4', 'Data 2-5', 'Data 2-6'],
+    [3, 'Data 3-1', 'Data 3-2', 'Data 3-3', 'Data 3-4', 'Data 3-5', 'Data 3-6'],
+    [3, 'Data 3-1', 'Data 3-2', 'Data 3-3', 'Data 3-4', 'Data 3-5', 'Data 3-6'],
+  ];
+
   return (
-    <Table responsive>
+   <>
+   <h3>Farmers Onboard</h3>
+    <Table responsive className='custom-table'>
       <thead>
         <tr>
-          <th>#</th>
-          {Array.from({ length: 6 }).map((_, index) => (
-            <th key={index}>Table heading</th>
+          {headerNames.map((header, index) => (
+            <th key={index}>{header}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          {Array.from({ length: 6 }).map((_, index) => (
-            <td key={index}>Table cell {index}</td>
-          ))}
-        </tr>
-        <tr>
-          <td>2</td>
-          {Array.from({ length: 6 }).map((_, index) => (
-            <td key={index}>Table cell {index}</td>
-          ))}
-        </tr>
-        <tr>
-          <td>3</td>
-          {Array.from({ length: 6 }).map((_, index) => (
-            <td key={index}>Table cell {index}</td>
-          ))}
-        </tr>
+        {tableData.map((rowData, rowIndex) => (
+          <tr key={rowIndex}>
+            {rowData.map((cellData, cellIndex) => (
+              <td key={cellIndex}>{cellData}</td>
+            ))}
+          </tr>
+        ))}
       </tbody>
     </Table>
+   </>
   );
 }
 

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef  } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { Card, Button, Alert } from "react-bootstrap";
+import { Card, Button, Alert, Overlay, Popover } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import "./dashboard.css"
@@ -8,11 +8,20 @@ import Hero from "../Hero/Hero"
 import Footer from "../Footer/Footer"
 import AddFarmer from "../../components/AddFarmer/AddFarmer"
 import HomeImg from "../../assets/images/homepage/back.jpg"
+import profileIcon from "../../assets/icons/profile1.png"
 
 export default function Dashboard() {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+  const [target, setTarget] = useState(null);
+  const ref = useRef(null);
+
+  const handleClick = (event) => {
+    setShow(!show);
+    setTarget(event.target);
+  };
 
   async function handleLogout() {
     setError("");
@@ -97,11 +106,31 @@ export default function Dashboard() {
         </div>
       </div>
       <div className="mediaNavbar-sign">
-       <span >
-        <Button className="signIn" onClick={handleLogout}>
-          Log Out
-        </Button>
-       </span>
+       <div className="profileIcon" ref={ref}>
+        <img onClick={handleClick} src={profileIcon} alt=""/>
+        {/*tooltip here  */}
+      <Overlay
+        show={show}
+        target={target}
+        placement="bottom"
+        container={ref}
+        containerPadding={20}
+      >
+        <Popover id="popover-contained">
+          {error && <Alert variant="danger">{error}</Alert>}  
+          <Popover.Header as="h3">Agent Profile</Popover.Header>
+          <Popover.Body>
+            <strong>Email:</strong> {currentUser.email} 
+            <Link to="/update-profile" className="btn btn-primary w-100 mt-2 mb-1">
+            Update Profile
+          </Link>
+          <span onClick={handleLogout}>
+            Log Out
+          </span>
+          </Popover.Body>
+        </Popover>
+      </Overlay>
+    </div>
       </div>
       <div className="mediaNavbar-menu">
         {toggleMenu
@@ -114,27 +143,15 @@ export default function Dashboard() {
           <p><a href="/contactus">Contact Us</a></p>
           </div>
           <div className="mediaNavbar-menu_container-links-sign">
-          <Button onClick={handleLogout}>
-            Log Out
-          </Button>
+           <span className="profileIcon">
+             <img src={profileIcon} alt=""/>
+            {/*tooltip here  */}
+           </span>
           </div>
         </div>
         )}
       </div>
     </div>
-    {/* profile card */}
-     <div className="cardBox">
-     <Card className="profileCard">
-        <div>
-          <h2 className="text-center mb-4">Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Email:</strong> {currentUser.email}
-          <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-            Update Profile
-          </Link>
-        </div>
-      </Card>
-     </div>
      {/* add farmer */}
      <AddFarmer />
      {/*  */}
