@@ -168,8 +168,8 @@ label a{
 .sellerUser{
     border-radius: 10px;
     background: #fff;
-    padding: 30px;
-    width: 80%;
+    padding: 14px;
+    width: 100%;
 }
 
 .sellerHeading{
@@ -179,10 +179,10 @@ label a{
 }
 
 .sellDescription{
-    margin: 20px 0;
+    margin: 10px 0;
     text-transform: capitalize;
-    line-height: 45px;
-    font-size: 18.5px;
+    line-height: 35px;
+    font-size: 14.5px;
 }
 
 

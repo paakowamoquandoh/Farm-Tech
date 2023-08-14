@@ -1,9 +1,12 @@
 .profileBody{
     width: 100%;
+    height: 110vh;
     display: block;
     min-height: auto;
     padding: 0 5vw;
     position: relative;
+    background: rgb(227,239,251);
+    margin-top: -0.5rem;
 }
 
 .applicationForm{

@@ -65,7 +65,10 @@
     width: 100%;
 }
 
-
+.logout{
+    cursor: pointer;
+    color: var(--mainRed);
+}
 
 .mediaNavbarLogo h1{
     color: var(--color-footer);

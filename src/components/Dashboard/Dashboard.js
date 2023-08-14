@@ -147,7 +147,7 @@ export default function Dashboard() {
             <Link to="/update-profile" className="btn btn-primary w-100 mt-2 mb-1">
             Update Profile
           </Link>
-          <span onClick={handleLogout}>
+          <span className="logout" onClick={handleLogout}>
             Log Out
           </span>
           </Popover.Body>

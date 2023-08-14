@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import Hero from "../Hero/Hero"
 import HomeImg from "../../assets/images/homepage/back2.jpg"
+import Footer from "../Footer/Footer";
 
 export default function ContactUs() {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -18,9 +19,6 @@ export default function ContactUs() {
         </div>
         <div className="mediaNavbar-links_container">
         <p><a href="/">Home</a></p>
-          <p><a href="/whyus">Why Us</a></p>
-          <p><a href="/prospects">Prospects</a></p>
-          <p><a href="/features">Features</a></p>
           <p><a href="/contactus">Contact Us</a></p>
         </div>
       </div>
@@ -36,9 +34,6 @@ export default function ContactUs() {
         <div className="mediaNavbar-menu_container scale-up-center">
           <div className="mediaNavbar-menu_container-links">
           <p><a href="/">Home</a></p>
-          <p><a href="/whyus">Why Us</a></p>
-          <p><a href="/prospects">Prospects</a></p>
-          <p><a href="/features">Features</a></p>
           <p><a href="/contactus">Contact Us</a></p>
           </div>
           <div className="mediaNavbar-menu_container-links-sign">
@@ -51,9 +46,10 @@ export default function ContactUs() {
         className="homeHero1"
         textClass="heroText"
         heroImage={HomeImg}
-        title="Transforming Farming Through Technology"
-        text="Discover innovative solutions that revolutionize agriculture, increase yields, and ensure sustainable farming practices. Join us in shaping the future of farming with cutting-edge technology."
-        />     
+        title="Our Contact Page"
+        text="Get in touch with Excellent tech."
+        /> 
+        <Footer />    
     </>
   )
 }
