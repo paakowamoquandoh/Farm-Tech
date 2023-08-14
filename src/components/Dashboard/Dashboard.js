@@ -65,16 +65,14 @@ export default function Dashboard() {
         containerPadding={20}
       >
         <Popover id="popover-contained">
-          <Popover.Header as="h3">Login As Agent</Popover.Header>
           <Popover.Body>
             <Link to="/login" className="agentsignIn">
-             Log In
+             As Agent
              </Link>
           </Popover.Body>
-          <Popover.Header as="h3">Login as admin</Popover.Header>
           <Popover.Body>
           <Link to="" className="adminsignIn">
-             Log In
+             As Admin
              </Link>
           </Popover.Body>
         </Popover>

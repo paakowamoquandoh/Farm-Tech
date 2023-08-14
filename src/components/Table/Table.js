@@ -6,10 +6,10 @@ function ResponsiveExample() {
   const headerNames = ['#', 'Name', 'Location', 'ID Type', 'ID Number', 'Commodity', 'Quantity'];
 
   const tableData = [
-    [1, 'Data 1-1', 'Data 1-2', 'Data 1-3', 'Data 1-4', 'Data 1-5', 'Data 1-6'],
-    [2, 'Data 2-1', 'Data 2-2', 'Data 2-3', 'Data 2-4', 'Data 2-5', 'Data 2-6'],
-    [3, 'Data 3-1', 'Data 3-2', 'Data 3-3', 'Data 3-4', 'Data 3-5', 'Data 3-6'],
-    [3, 'Data 3-1', 'Data 3-2', 'Data 3-3', 'Data 3-4', 'Data 3-5', 'Data 3-6'],
+    [1, '', '', '', '', '', ''],
+    [2, '', '', '', '', '', ''],
+    [3, '', '', '', '', '', ''],
+    [3, '', '', '', '', '', ''],
   ];
 
   return (

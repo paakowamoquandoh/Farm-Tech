@@ -39,12 +39,10 @@ export default function Login() {
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required />
+              <Form.Control placeholder="enter email" type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
+              <Form.Control placeholder="password" type="password" ref={passwordRef} required />
             </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
               Log In
@@ -55,7 +53,7 @@ export default function Login() {
           </div>
         </div>
         <div className="loginLink">
-        Need an account? <Link to="/contactus">Contact us</Link> for a link to <Link to="/contactus">Sign Up.</Link>
+        Need an account? <Link to="/contactus">Contact us</Link> for a link to <Link to="/signup">Sign Up.</Link>
       </div>
       </div>
       
