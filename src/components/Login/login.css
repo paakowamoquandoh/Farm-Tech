@@ -124,7 +124,7 @@ label a{
   text-align: center;
   display: block;
   font-weight: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .alertArea{

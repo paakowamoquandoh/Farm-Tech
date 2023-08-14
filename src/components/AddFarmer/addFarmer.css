@@ -45,6 +45,11 @@ textarea{
     text-shadow: 0 0 10px #fff;
 }
 
+.productTitle{
+    font-weight: bold;
+    color: #61A734;
+}
+
 .productImgText{
     text-transform: capitalize;
     color: #383838;

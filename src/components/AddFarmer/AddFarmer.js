@@ -2,23 +2,22 @@ import React from "react";
 // import noproductImg from "../../assets/icons/nopro.png"
 import "./addFarmer.css";
 import Modal from "../Modal/Modal";
-import Navbar from "../Navbar/Navbar";
 import Table from "../Table/Table"
+import Footer from "../Footer/Footer";
 
 
 
 
 const AddFarmer = () => (
-    
-<div>
-    <Navbar/>
+    <>
+    <div>
 <div className="dashBox">
 
 
 <div id="productListing" className="productListing">
 
  <div className="addProduct">
-     <p className="productTitle">Application Successfull</p>
+     <p className="productTitle">Agent Dashboard</p>
      <Modal />
      {/* <button className="btn">add farmer</button> */}
  </div>
@@ -28,12 +27,10 @@ const AddFarmer = () => (
 </div> */}
 <Table />
 </div>
-<div className="backtohome">
- <a href="/">Go Back to Homepage</a>
-</div>
-
 </div>
 </div>
+<Footer />
+    </>
 );
 
 export default AddFarmer;
