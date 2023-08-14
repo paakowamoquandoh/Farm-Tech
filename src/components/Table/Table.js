@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import "./table.css"
 
 function ResponsiveExample() {
-  const headerNames = ['#', 'Header 1', 'Header 2', 'Header 3', 'Header 4', 'Header 5', 'Header 6'];
+  const headerNames = ['#', 'Name', 'Location', 'ID Type', 'ID Number', 'Commodity', 'Quantity'];
 
   const tableData = [
     [1, 'Data 1-1', 'Data 1-2', 'Data 1-3', 'Data 1-4', 'Data 1-5', 'Data 1-6'],

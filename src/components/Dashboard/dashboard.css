@@ -35,6 +35,34 @@
     border-radius: 5px;
 }
 
+.agentsignIn{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #61A734;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adminsignIn{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #222222;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .mediaNavbarLogo h1{
     color: var(--color-footer);
     font-family: var(--font-family);

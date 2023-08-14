@@ -1,6 +1,6 @@
 import React, { useState, useRef  } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { Card, Button, Alert, Overlay, Popover } from "react-bootstrap";
+import {  Button, Alert, Overlay, Popover } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import "./dashboard.css"
@@ -17,6 +17,7 @@ export default function Dashboard() {
   const [show, setShow] = useState(false);
   const [target, setTarget] = useState(null);
   const ref = useRef(null);
+  
 
   const handleClick = (event) => {
     setShow(!show);
@@ -51,11 +52,34 @@ export default function Dashboard() {
         </div>
       </div>
       <div className="mediaNavbar-sign">
-       <span >
-       <Link className="signIn" to="/login" >
+      <div ref={ref}>
+      <Button onClick={handleClick} className="signIn">
           Log In
-        </Link>
-       </span>
+      </Button>
+
+      <Overlay
+        show={show}
+        target={target}
+        placement="bottom"
+        container={ref}
+        containerPadding={20}
+      >
+        <Popover id="popover-contained">
+          <Popover.Header as="h3">Login As Agent</Popover.Header>
+          <Popover.Body>
+            <Link to="/login" className="agentsignIn">
+             Log In
+             </Link>
+          </Popover.Body>
+          <Popover.Header as="h3">Login as admin</Popover.Header>
+          <Popover.Body>
+          <Link to="" className="adminsignIn">
+             Log In
+             </Link>
+          </Popover.Body>
+        </Popover>
+      </Overlay>
+       </div>
       </div>
       <div className="mediaNavbar-menu">
         {toggleMenu
