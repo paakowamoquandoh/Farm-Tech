@@ -38,9 +38,6 @@ export default function Dashboard() {
         </div>
         <div className="mediaNavbar-links_container">
         <p><a href="/">Home</a></p>
-          <p><a href="/whyus">Why Us</a></p>
-          <p><a href="/prospects">Prospects</a></p>
-          <p><a href="/features">Features</a></p>
           <p><a href="/contactus">Contact Us</a></p>
         </div>
       </div>
@@ -59,9 +56,6 @@ export default function Dashboard() {
         <div className="mediaNavbar-menu_container scale-up-center">
           <div className="mediaNavbar-menu_container-links">
           <p><a href="/">Home</a></p>
-          <p><a href="/whyus">Why Us</a></p>
-          <p><a href="/prospects">Prospects</a></p>
-          <p><a href="/features">Features</a></p>
           <p><a href="/contactus">Contact Us</a></p>
           </div>
           <div className="mediaNavbar-menu_container-links-sign">
@@ -99,9 +93,6 @@ export default function Dashboard() {
         </div>
         <div className="mediaNavbar-links_container">
         <p><a href="/">Home</a></p>
-          <p><a href="/whyus">Why Us</a></p>
-          <p><a href="/prospects">Prospects</a></p>
-          <p><a href="/features">Features</a></p>
           <p><a href="/contactus">Contact Us</a></p>
         </div>
       </div>
@@ -120,9 +111,6 @@ export default function Dashboard() {
         <div className="mediaNavbar-menu_container scale-up-center">
           <div className="mediaNavbar-menu_container-links">
           <p><a href="/">Home</a></p>
-          <p><a href="/whyus">Why Us</a></p>
-          <p><a href="/prospects">Prospects</a></p>
-          <p><a href="/features">Features</a></p>
           <p><a href="/contactus">Contact Us</a></p>
           </div>
           <div className="mediaNavbar-menu_container-links-sign">
