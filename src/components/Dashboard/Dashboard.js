@@ -10,6 +10,7 @@ import AddFarmer from "../../components/AddFarmer/AddFarmer"
 import HomeImg from "../../assets/images/homepage/back.jpg"
 import profileIcon from "../../assets/icons/profile1.png"
 
+
 export default function Dashboard() {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
@@ -67,12 +68,12 @@ export default function Dashboard() {
         <Popover id="popover-contained">
           <Popover.Body>
             <Link to="/login" className="agentsignIn">
-             As Agent
+             Agent
              </Link>
           </Popover.Body>
           <Popover.Body>
           <Link to="" className="adminsignIn">
-             As Admin
+             Admin
              </Link>
           </Popover.Body>
         </Popover>

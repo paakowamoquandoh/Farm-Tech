@@ -48,7 +48,7 @@ function Example() {
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridCity">
           <Form.Label>Commodity</Form.Label>
-          <Form.Control />
+          <Form.Control placeholder='eg. maize' />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridState">
@@ -61,7 +61,7 @@ function Example() {
 
         <Form.Group as={Col} controlId="formGridZip">
           <Form.Label>Quantity</Form.Label>
-          <Form.Control />
+          <Form.Control placeholder='eg 3tons'/>
         </Form.Group>
       </Row>
 

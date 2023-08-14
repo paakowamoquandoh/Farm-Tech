@@ -57,7 +57,7 @@ export default function UpdateProfile() {
         <div className="logoContainer">
         <img src={brandImg} className="logo" alt=""/>
       </div>
-          <h2 className="text-center mb-4">Update Profile</h2>
+          <h4 className="text-center mb-4">Update Profile</h4>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
@@ -107,10 +107,11 @@ export default function UpdateProfile() {
               Update
             </Button>
           </Form>
-        </div>
-        <div className="cancelButton">
+          <div className="cancelButton">
         <Link to="/">Cancel</Link>
       </div>
+        </div>
+       
       </div>
       
     </>

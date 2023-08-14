@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import "./addagent.css"
 
-function ProfileUpdateForm() {
+function AddAgent() {
   const [formData, setFormData] = useState({
     // Initialize your form data fields here
   });
@@ -47,6 +47,7 @@ function ProfileUpdateForm() {
   };
 
   return (
+    <>
     <Form className='formBody' onSubmit={handleSubmit}>
       {/* Your form fields */}
       <Form.Group controlId="exampleForm.ControlInput1">
@@ -65,7 +66,8 @@ function ProfileUpdateForm() {
       {/* Repeat Form.Group for other fields */}
       <Button type="submit">Update Profile</Button>
     </Form>
+    </>
   );
 }
 
-export default ProfileUpdateForm;
+export default AddAgent;

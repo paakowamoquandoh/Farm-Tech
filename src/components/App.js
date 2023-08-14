@@ -7,6 +7,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import Login from "../components/Login/Login";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
+import AgentForm from "../components/AddAgent/AddAgent"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/contactus" element={<ContactUs />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/agentform" element={<AgentForm />} />
               {/* Protected routes */}
               <Route path="/" element={<Dashboard />} />
               <Route path="/update-profile" element={<UpdateProfile />} />

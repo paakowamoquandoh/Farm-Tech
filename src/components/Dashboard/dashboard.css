@@ -40,7 +40,7 @@
     color: #fff;
     background: #61A734;
     font-family: var(--font-family);
-    font-weight: 500;
+    font-weight: bold;
     font-size: 13px;
     line-height: 25px;
     border: none;
@@ -55,7 +55,7 @@
     color: #fff;
     background: #222222;
     font-family: var(--font-family);
-    font-weight: 500;
+    font-weight: bold;
     font-size: 13px;
     line-height: 25px;
     border: none;
