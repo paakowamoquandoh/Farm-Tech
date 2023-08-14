@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import Hero from "../Hero/Hero"
+import HomeImg from "../../assets/images/homepage/back2.jpg"
 
 export default function ContactUs() {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -45,7 +46,14 @@ export default function ContactUs() {
         </div>
         )}
       </div>
-    </div>      
+    </div> 
+    <Hero 
+        className="homeHero1"
+        textClass="heroText"
+        heroImage={HomeImg}
+        title="Transforming Farming Through Technology"
+        text="Discover innovative solutions that revolutionize agriculture, increase yields, and ensure sustainable farming practices. Join us in shaping the future of farming with cutting-edge technology."
+        />     
     </>
   )
 }
