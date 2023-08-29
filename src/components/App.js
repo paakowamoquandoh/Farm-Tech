@@ -7,7 +7,9 @@ import Dashboard from "./Dashboard/Dashboard";
 import Login from "../components/Login/Login";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
-import AgentForm from "../components/AddAgent/AddAgent"
+import AgentForm from "../components/AddAgent/AddAgent";
+import Admin from "../components/AdminDashboard/Admin";
+import AdminLogin from "../components/Login/AdminLogin";
 
 function App() {
   return (
@@ -17,11 +19,14 @@ function App() {
             <Routes>
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/adminlogin" element={<AdminLogin />} />
               <Route path="/contactus" element={<ContactUs />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
               <Route path="/agentform" element={<AgentForm />} />
+              
               {/* Protected routes */}
               <Route path="/" element={<Dashboard />} />
+              <Route path="/admin" element={<Admin />} />
               <Route path="/update-profile" element={<UpdateProfile />} />
             </Routes>
           </AuthProvider>

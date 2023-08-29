@@ -55,7 +55,7 @@ export default function Dashboard() {
       <div className="mediaNavbar-sign">
       <div ref={ref}>
       <Button onClick={handleClick} className="signIn">
-          Log In
+          Log In As
       </Button>
 
       <Overlay
@@ -72,8 +72,8 @@ export default function Dashboard() {
              </Link>
           </Popover.Body>
           <Popover.Body>
-          <Link to="" className="adminsignIn">
-             Admin
+          <Link to="/adminlogin" className="adminsignIn">
+              Admin
              </Link>
           </Popover.Body>
         </Popover>
