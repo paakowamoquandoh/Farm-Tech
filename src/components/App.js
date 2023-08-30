@@ -33,7 +33,6 @@ function App() {
               path="/admin/*" // This matches any route starting with /admin/
               element={<Admin />}
             >
-              <Route path="" element={<DashboardHome />} />
               <Route path="admintable" element={<AdminTable />} />
               <Route path="reports" element={<Reports />} />
               {/* <Route path="/settings" element={<Settings />} /> */}

@@ -5,7 +5,6 @@ import React from "react";
 function DashboardHome() {
     return(
         <>
-        <div className="projects-section">
         <div className="projects-section-header">
         <p>Admin Dashboard</p>
         <p className="time">New Date( )</p>
@@ -44,7 +43,6 @@ function DashboardHome() {
           </button>
         </div>
       </div>
-        </div>
         </>
     )    
 }
