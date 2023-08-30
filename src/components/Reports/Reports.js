@@ -4,7 +4,7 @@ function Reports() {
     return(
         <>
         <div className="projects-section">
-          im report
+         <div className="text-white">Reports section here</div>
         </div>
         </>
     )    

@@ -1,5 +1,6 @@
 import "./admin.css";
 import { NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import {
   RiHome2Fill,
   RiTable2,
@@ -51,7 +52,7 @@ function Sidebar({children}) {
           </span>
         </div>
         <div className="projects-section">
-         {children}
+          <Outlet/>
         </div>
     </>
   );
