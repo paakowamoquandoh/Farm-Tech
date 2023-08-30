@@ -12,7 +12,6 @@ import Admin from "../components/AdminDashboard/Admin";
 import AdminLogin from "../components/Login/AdminLogin";
 import AdminTable from "./AdminTables/AdminTable";
 import Reports from "../components/Reports/Reports";
-import DashboardHome from "./AdminDashboard/DashboardHome";
 
 function App() {
   return (
