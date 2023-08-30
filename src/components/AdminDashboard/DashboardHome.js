@@ -1,8 +1,8 @@
-import Sidebar from "./Sidebar";
 import "./admin.css";
+import React from "react";
 
 
-function DashboardArea() {
+function DashboardHome() {
     return(
         <>
         <div className="projects-section">
@@ -50,4 +50,4 @@ function DashboardArea() {
 }
 
 
-export default DashboardArea;
+export default DashboardHome;

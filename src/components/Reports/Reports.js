@@ -1,4 +1,4 @@
-import {  } from "./reports.css";
+import {  } from "./report.css";
 
 function Reports() {
     return(

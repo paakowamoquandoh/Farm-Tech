@@ -1,6 +1,6 @@
-import {  } from "./hero.css";
+import "./adminTable.css";
 
-function Hero(props) {
+function AdminTable() {
     return(
         <>
         <div className="text-white">
@@ -11,4 +11,4 @@ function Hero(props) {
 }
 
 
-export default Hero;
+export default AdminTable;
