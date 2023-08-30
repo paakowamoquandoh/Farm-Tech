@@ -1,0 +1,228 @@
+.mediaNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #f1f1f1;
+}
+
+.mediaNavbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mediaNavbarLogo {
+    margin-right: 2rem;
+}
+
+.goldText{
+    color: #61A734;
+}
+
+.signIn{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: var(--mainRed);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.agentsignIn{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #61A734;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.adminsignIn{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #222222;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.logout{
+    cursor: pointer;
+    color: var(--mainRed);
+}
+
+.mediaNavbarLogo h1{
+    color: var(--color-footer);
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.mediaNavbar-links_container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.mediaNavbar-links_container p a, .mediaNavbar-menu_container-links p a{
+    color: #61A734;
+}
+
+.mediaNavbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.mediaNavbar-links_container p,
+.mediaNavbar-menu_container p {
+    color: var(--color-footer);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.mediaNavbar-sign button,
+.mediaNavbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: var(--mainRed);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mediaNavbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.mediaNavbar-menu svg {
+    cursor: pointer;
+}
+
+.mediaNavbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;    
+    text-align: end;
+    background: var(--color-text);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.mediaNavbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.mediaNavbar-menu_container-links-sign {
+    display: none;
+   
+}
+
+a{
+    color: var(--mainRed);
+    font-weight: 600;
+}
+
+.loginIcon{
+    height: auto;
+    width: 2rem;
+    object-fit: cover;
+}
+
+.cardBox{
+    max-width: 300px;
+    margin-left: auto;
+    
+}
+
+.profileIcon img{
+    width: 3rem;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .mediaNavbar-links_container {
+        display: none;
+    }
+
+    .mediaNavbar-menu {
+        display: flex;
+    }
+
+    .mediaNavbar-menu_container {
+        top: 20px;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    
+    
+    .mediaNavbar {
+        padding: 2rem 3rem;
+    }
+
+    .mediaNavbarLogo h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mediaNavbar {
+        padding: 1rem;
+    }
+
+    .mediaNavbar-sign {
+        display: none;
+    }
+
+   
+    .mediaNavbar-menu_container-links-sign {
+        display: block;
+    }
+}

@@ -1,0 +1,76 @@
+.homeHero{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.homeHero1{
+    width: 100%;
+    height: 45vh;
+    position: relative;
+}
+
+.otherHeroes{
+    width: 100%;
+    height: 76vh;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.heroText{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroText h1{
+    text-transform: uppercase;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: var(--mainRed);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroText p{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: var(--colorWhite);
+  
+    padding: 0.2rem 0 1.5rem 0;
+    width: 80%;
+}
+
+.heroText .homeBtn{
+    text-decoration: none;
+    background: var(--color-footer);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--colorWhite);
+}
+
+@media screen and (max-width: 550px){
+    .heroText h1{
+        padding: 10px 20px;
+        font-size: 1.6rem;
+    }
+
+    .heroText p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+}

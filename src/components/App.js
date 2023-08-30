@@ -16,32 +16,33 @@ import Reports from "../components/Reports/Reports";
 function App() {
   return (
     <div>
-      <Router>
-        <AuthProvider>
-          <Routes>
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/adminlogin" element={<AdminLogin />} />
-            <Route path="/contactus" element={<ContactUs />} />
-            <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="/agentform" element={<AgentForm />} />
+    <Router>
+      <AuthProvider>
+        <Routes>
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/adminlogin" element={<AdminLogin />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/agentform" element={<AgentForm />} />
 
-            {/* Protected routes */}
-            <Route path="/" element={<Dashboard />} />
-            <Route
-              path="/admin/*" // This matches any route starting with /admin/
-              element={<Admin />}
-            >
-              <Route path="admintable" element={<AdminTable />} />
-              <Route path="reports" element={<Reports />} />
-              {/* <Route path="/settings" element={<Settings />} /> */}
-            </Route>
+          {/* Protected routes */}
+          <Route path="/" element={<Dashboard />} />
+          <Route
+            path="/admin/*" // This matches any route starting with /admin/
+            element={<Admin />}
+          >
+            <Route path="admintable" element={<AdminTable />} />
+            <Route path="reports" element={<Reports />} />
+            {/* <Route path="/settings" element={<Settings />} /> */}
+          </Route>
 
-            <Route path="/update-profile" element={<UpdateProfile />} />
-          </Routes>
-        </AuthProvider>
-      </Router>
-    </div>
+          <Route path="/update-profile" element={<UpdateProfile />} />
+        </Routes>
+      </AuthProvider>
+    </Router>
+  </div>
+     
   );
 }
 
