@@ -2,6 +2,7 @@ import React from "react";
 import "./admin.css";
 import Sidebar from "../AdminDashboard/Sidebar";
 import HomeNav from "../HomeNav/HomeNav";
+import DashboardHome from "./DashboardHome";
 
 
 function Admin() {
@@ -12,8 +13,7 @@ function Admin() {
         <HomeNav />
         <div className="app-content">
         <Sidebar />
-        </div>
-        
+        </div>        
       </div>    
     </>
   );

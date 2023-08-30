@@ -9,10 +9,10 @@ import {
 } from "react-icons/ri";
 import logoutImg from "../../assets/icons/logout.png";
 
-function Sidebar({children}) {
+function Sidebar() {
   const menuItem = [
     {
-      path: "admin",
+      path: "",
       linkName: "Home",
       icon: <RiHome2Fill />,
     },
