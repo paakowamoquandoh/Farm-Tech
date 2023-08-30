@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Jack Jones",
+            "username": "J Tack",
+            "email": "jackjones@jmail.com",
+            "phone": "0244123123",
+            "location": "Kumasi"
+        },
+        {
+            "id": 2,
+            "name": "Tina Jones",
+            "username": "Tee Tina",
+            "email": "teejones@jmail.com",
+            "phone": "0244123456",
+            "location": "Accra"
+        },
+        {
+            "id": 3,
+            "name": "Jack Bright",
+            "username": "Unc White",
+            "email": "whiteb@jmail.com",
+            "phone": "0244123678",
+            "location": "Cape coast"
+        },
+        {
+            "id": 4,
+            "name": "Fred James",
+            "username": "Jay Jay",
+            "email": "jayjay@jmail.com",
+            "phone": "0244121010",
+            "location": "Navrongo"
+        }
+    ]
+}
