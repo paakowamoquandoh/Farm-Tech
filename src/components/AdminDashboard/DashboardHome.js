@@ -8,7 +8,7 @@ function DashboardHome() {
         <div className="projects-section">
         <div className="projects-section-header">
         <p>Admin Dashboard</p>
-        <p className="time">New Date()</p>
+        <p className="time">New Date( )</p>
       </div>
       <div className="projects-section-line">
         <div className="projects-status">

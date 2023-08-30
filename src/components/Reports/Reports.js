@@ -3,7 +3,7 @@ import {  } from "./report.css";
 function Reports() {
     return(
         <>
-        <div className="text-white">
+        <div className="projects-section">
           im report
         </div>
         </>

@@ -1,11 +1,13 @@
+
 import "./adminTable.css";
+import React from "react";
 
 function AdminTable() {
     return(
         <>
-        <div className="text-white">
-           Tabular component
-        </div>
+         <div className="projects-section">
+             <h1 className="text-white">meeeeeeee</h1>
+         </div>
         </>
     )    
 }

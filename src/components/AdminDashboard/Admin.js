@@ -2,7 +2,7 @@ import React from "react";
 import "./admin.css";
 import Sidebar from "../AdminDashboard/Sidebar";
 import HomeNav from "../HomeNav/HomeNav";
-import DashboardHome from "./DashboardHome";
+import { Outlet } from "react-router-dom";
 
 function Admin() {
  
@@ -12,9 +12,11 @@ function Admin() {
         <HomeNav />
         <div className="app-content">
         <Sidebar />
-        <DashboardHome />
-        </div>    
-      </div>
+        </div>
+        <div className="projects-section">
+          <Outlet/>
+        </div>
+      </div>    
     </>
   );
 }
