@@ -61,7 +61,7 @@ function HomeNav() {
             <div className="profile-btn" ref={ref}>
               <div onClick={handleClick}>
                 <img src={avatar} alt="" />
-                <span>Admin D. Name</span>
+                <span>Peni H.</span>
               </div>
               {/*tooltip here  */}
               <Overlay
