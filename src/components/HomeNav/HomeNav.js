@@ -4,6 +4,7 @@ import { Overlay, Popover } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link } from "react-router-dom";
 import avatar from "../../assets/icons/profile.png";
+import AdminModal from "../AdminModal/AdminModal";
 
 function HomeNav() {
     const { currentUser } = useAuth();
@@ -39,23 +40,7 @@ function HomeNav() {
         </div> */}
           </div>
           <div className="app-header-right">
-            <button className="add-btn" title="Add New Project">
-              <svg
-                className="btn-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="12" y1="5" x2="12" y2="19" />
-                <line x1="5" y1="12" x2="19" y2="12" />
-              </svg>
-            </button>
+            <AdminModal/>
             <button className="notification-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
