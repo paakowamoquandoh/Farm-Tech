@@ -14,6 +14,7 @@ import Reports from "../components/Reports/Reports";
 import Homepage from "../components/Homepage/Homepage"
 import WelcomePage from "./WelcomePage/WelcomePage";
 import AgentDashboard from "./AgentDashboard/AgentDashboard";
+import DashboardHome from "./AdminDashboard/DashboardHome";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/homepage" element={<Homepage />} />
           <Route path="/agentdashboard" element={<AgentDashboard />} />
           <Route path="/admin/*" element={<Admin />}>
+            <Route path="" element={<DashboardHome />} /> */
             <Route path="admintable" element={<AdminTable />} />
             <Route path="reports" element={<Reports />} />
             {/* <Route path="/settings" element={<Settings />} /> */}

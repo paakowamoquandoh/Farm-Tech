@@ -1,14 +1,12 @@
 import React, { useState, useRef } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { Alert, Overlay, Popover } from "react-bootstrap";
+import { Overlay, Popover } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import avatar from "../../assets/icons/profile.png";
 
 function HomeNav() {
-    const [error, setError] = useState("");
-    const { currentUser, logout } = useAuth();
-    const navigate = useNavigate();
+    const { currentUser } = useAuth();
     const [show, setShow] = useState(false);
     const [target, setTarget] = useState(null);
     const ref = useRef(null);
@@ -17,17 +15,6 @@ function HomeNav() {
       setShow(!show);
       setTarget(event.target);
     };
-  
-    async function handleLogout() {
-      setError("");
-  
-      try {
-        await logout();
-        navigate.push("/");
-      } catch {
-        setError("Failed to log out");
-      }
-    }
   
     const [toggleMenu, setToggleMenu] = useState(false);
   
@@ -100,7 +87,6 @@ function HomeNav() {
                 containerPadding={20}
               >
                 <Popover id="popover-contained">
-                  {error && <Alert variant="danger">{error}</Alert>}
                   <Popover.Header as="h3">Admin Profile</Popover.Header>
                   <Popover.Body>
                     <strong>Email:</strong> {userEmail}
@@ -110,9 +96,6 @@ function HomeNav() {
                     >
                       Update Profile
                     </Link>
-                    <span className="logout" onClick={handleLogout}>
-                      Log Out
-                    </span>
                   </Popover.Body>
                 </Popover>
               </Overlay>

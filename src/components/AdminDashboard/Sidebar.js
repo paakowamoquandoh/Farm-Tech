@@ -8,12 +8,12 @@ import {
   RiSettings2Fill,
 } from "react-icons/ri";
 import logoutImg from "../../assets/icons/logout.png";
-import DashboardHome from "./DashboardHome";
+import LogoutButton from "../Logout/Logout";
 
 function Sidebar() {
   const menuItem = [
     {
-      path: "admin",
+      path: "/admin",
       linkName: "Home",
       icon: <RiHome2Fill />,
     },
@@ -49,11 +49,10 @@ function Sidebar() {
           ))}
           <span className="adminlogout">
             <img src={logoutImg} alt="" />
-            Log Out
+            <LogoutButton />
           </span>
         </div>
         <div className="projects-section">
-          <DashboardHome />
           <Outlet/>
         </div>
     </>

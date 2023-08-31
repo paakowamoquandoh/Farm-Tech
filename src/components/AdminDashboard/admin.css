@@ -199,6 +199,12 @@
     align-items: center;
 }
 
+.adminlogout button{
+    color: #dbf6fd;
+    background: transparent;
+    border: none;
+}
+
 .app-sidebar-link { 
     flex-shrink: 0;
     width: 40px;
