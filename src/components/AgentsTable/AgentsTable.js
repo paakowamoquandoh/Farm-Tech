@@ -14,7 +14,6 @@ function AdminsListTable() {
 
   return (
    <>
-   <h3>Farmers Onboard</h3>
     <Table responsive className='custom-table'>
       <thead>
         <tr>

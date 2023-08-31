@@ -4,8 +4,6 @@ import { Overlay, Popover } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link } from "react-router-dom";
 import avatar from "../../assets/icons/profile.png";
-import AdminModal from "../AdminModal/AdminModal";
-
 function HomeNav() {
     const { currentUser } = useAuth();
     const [show, setShow] = useState(false);
@@ -40,7 +38,6 @@ function HomeNav() {
         </div> */}
           </div>
           <div className="app-header-right">
-            <AdminModal/>
             <button className="notification-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

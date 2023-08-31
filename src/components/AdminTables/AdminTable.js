@@ -1,4 +1,4 @@
-import AdminsListTable from "../AgentsTable/AgentsTable";
+import AgentModal from "../AgentModal/AgentModal";
 import Table from "../Table/Table";
 import "./adminTable.css"
 import React from "react";
@@ -10,13 +10,8 @@ function AdminTable() {
      <div className="projects-section">
         <div>
         <div className="projects-section-header">
-          <p>Admins Table</p>
-        </div>
-        <AdminsListTable />
-        </div>
-        <div>
-        <div className="projects-section-header">
           <p>Agents Table</p>
+          <span className="add"><AgentModal/>Invite Agent</span>
         </div>
         <Table />
         </div>
