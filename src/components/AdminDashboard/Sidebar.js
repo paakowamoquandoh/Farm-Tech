@@ -14,17 +14,17 @@ function Sidebar() {
   const menuItem = [
     {
       path: "/admin",
-      linkName: "Home",
+      linkName: "Overview",
       icon: <RiHome2Fill className="icon-medium" />,
     },
     {
       path: "admintable",
-      linkName: "Tables",
+      linkName: "Farmer",
       icon: <RiTable2 className="icon-medium" />,
     },
     {
       path: "reports",
-      linkName: "Reports",
+      linkName: "Admins",
       icon: <RiPagesFill className="icon-medium" />,
     },
     {

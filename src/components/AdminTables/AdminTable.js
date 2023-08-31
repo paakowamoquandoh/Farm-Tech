@@ -1,3 +1,4 @@
+import AdminsListTable from "../AgentsTable/AgentsTable";
 import Table from "../Table/Table";
 import "./adminTable.css"
 import React from "react";
@@ -11,7 +12,7 @@ function AdminTable() {
         <div className="projects-section-header">
           <p>Admins Table</p>
         </div>
-        <Table />
+        <AdminsListTable />
         </div>
         <div>
         <div className="projects-section-header">
