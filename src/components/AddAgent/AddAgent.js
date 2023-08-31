@@ -44,7 +44,7 @@ function AddAgent() {
     }
 
     // If no errors, proceed with form submission logic
-    window.location.href = '/';
+    window.location.href = '/agentdashboard';
   };
 
   return (

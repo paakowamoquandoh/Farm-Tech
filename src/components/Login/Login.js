@@ -20,7 +20,7 @@ export default function Login() {
       setError("")
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
-      navigate("/")
+      navigate("/homepage")
     } catch {
       setError("Failed to login an account: " + error.message);
     }

@@ -3,7 +3,6 @@ import Signup from "../components/SignUp/Signup";
 import ContactUs from "./ContactUs/ContactUs";
 import { AuthProvider } from "../contexts/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from "./Dashboard/Dashboard";
 import Login from "../components/Login/Login";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
@@ -12,6 +11,9 @@ import Admin from "../components/AdminDashboard/Admin";
 import AdminLogin from "../components/Login/AdminLogin";
 import AdminTable from "./AdminTables/AdminTable";
 import Reports from "../components/Reports/Reports";
+import Homepage from "../components/Homepage/Homepage"
+import WelcomePage from "./WelcomePage/WelcomePage";
+import AgentDashboard from "./AgentDashboard/AgentDashboard";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
     <Router>
       <AuthProvider>
         <Routes>
+        <Route path="/" element={<WelcomePage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
@@ -27,16 +30,13 @@ function App() {
           <Route path="/agentform" element={<AgentForm />} />
 
           {/* Protected routes */}
-          <Route path="/" element={<Dashboard />} />
-          <Route
-            path="/admin/*" // This matches any route starting with /admin/
-            element={<Admin />}
-          >
+          <Route path="/homepage" element={<Homepage />} />
+          <Route path="/agentdashboard" element={<AgentDashboard />} />
+          <Route path="/admin/*" element={<Admin />}>
             <Route path="admintable" element={<AdminTable />} />
             <Route path="reports" element={<Reports />} />
             {/* <Route path="/settings" element={<Settings />} /> */}
           </Route>
-
           <Route path="/update-profile" element={<UpdateProfile />} />
         </Routes>
       </AuthProvider>
