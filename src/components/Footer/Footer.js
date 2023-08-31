@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer">
             <div className="topside">
             <div className="mediaNavbarLogo">
-          <h1>Excellent<i className='goldText'>Tech</i></h1>
+          <h1 className="text-white">Excellent<i className='goldText'>Tech</i></h1>
             </div>
                 <div className="socials">
                     <a href="/"><Twitter/></a>
