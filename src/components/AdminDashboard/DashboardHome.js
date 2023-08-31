@@ -7,7 +7,7 @@ function DashboardHome() {
         <>
         <div className="projects-section-header">
         <p>Admin Dashboard</p>
-        <p className="time">New Date( )</p>
+        <p className="time">Go to Settings</p>
       </div>
       <div className="projects-section-line">
         <div className="projects-status">
@@ -17,7 +17,7 @@ function DashboardHome() {
           </div>
           <div className="item-status">
             <span className="status-number">4</span>
-            <span className="status-type">Upcoming</span>
+            <span className="status-type">Approved Agents</span>
           </div>
           <div className="item-status">
             <span className="status-number">19</span>
