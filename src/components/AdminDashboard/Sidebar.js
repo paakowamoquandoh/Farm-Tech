@@ -15,22 +15,22 @@ function Sidebar() {
     {
       path: "/admin",
       linkName: "Home",
-      icon: <RiHome2Fill />,
+      icon: <RiHome2Fill className="icon-medium" />,
     },
     {
       path: "admintable",
       linkName: "Tables",
-      icon: <RiTable2 />,
+      icon: <RiTable2 className="icon-medium" />,
     },
     {
       path: "reports",
       linkName: "Reports",
-      icon: <RiPagesFill />,
+      icon: <RiPagesFill className="icon-medium" />,
     },
     {
       path: "settings",
       linkName: "Settings",
-      icon: <RiSettings2Fill />,
+      icon: <RiSettings2Fill className="icon-medium" />,
     },
   ];
   return (

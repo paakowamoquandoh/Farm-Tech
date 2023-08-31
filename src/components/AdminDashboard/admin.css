@@ -207,8 +207,6 @@
 
 .app-sidebar-link { 
     flex-shrink: 0;
-    width: 40px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,6 +217,11 @@
 .barLink.active {
     color: green;
 }
+
+.icon-medium {
+    font-size: 38px;
+  }
+
 .projects-section {
     flex: 2;
     background-color: var(--projects-section);
