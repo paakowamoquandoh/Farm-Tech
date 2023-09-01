@@ -13,7 +13,7 @@ function AdminTable() {
       commodities: "Grains",
       phone: "0244123123",
       identity: "Ghana Card",
-      status: "live",
+      status: "active",
     },
   ]);
   const [rowToEdit, setRowToEdit] = useState(null);
@@ -45,13 +45,13 @@ function AdminTable() {
         <div className="projects-section">
           <div>
             <div className="projects-section-header">
-              <p>Agents Table</p>
+              <p>Admins Onboard</p>
               <button onClick={() => setModalOpen(true)} className="btn">
-                Add new farmer
+                Add new Agent
               </button>
               <span className="add">
                 <AgentModal />
-                Invite Agent
+                Invite Admin
               </span>
             </div>
             <div>
@@ -74,6 +74,7 @@ function AdminTable() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }

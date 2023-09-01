@@ -51,11 +51,11 @@
   background-color: #777;
 }
 
-.label-live {
+.label-active {
   background-color: #42a942;
 }
 
-.label-error {
+.label-inactive {
   background-color: #d9534f;
 }
 

@@ -19,12 +19,12 @@ function Sidebar() {
     },
     {
       path: "admintable",
-      linkName: "Farmer",
+      linkName: "Admins",
       icon: <RiTable2 className="icon-medium" />,
     },
     {
       path: "reports",
-      linkName: "Admins",
+      linkName: "Farmer",
       icon: <RiPagesFill className="icon-medium" />,
     },
     {
