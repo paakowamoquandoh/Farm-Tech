@@ -1,3 +1,23 @@
 .admintable h3{
     display: none;
 }
+
+.admintable{
+    width: 100%;
+}
+
+.admintable .btn {
+    margin-top: 1rem;
+    border: none;
+    background-color: #2ba337;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .admintable .btn:hover {
+    color: white;
+    background: crimson;
+  }
+  

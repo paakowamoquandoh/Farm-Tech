@@ -1,9 +1,7 @@
 import React from "react";
-// import noproductImg from "../../assets/icons/nopro.png"
+import noproductImg from "../../assets/icons/nopro.png"
 import "./addFarmer.css";
 import Modal from "../Modal/Modal";
-import Table from "../Table/Table";
-
 
 const AddFarmer = () => (
   <>
@@ -15,11 +13,11 @@ const AddFarmer = () => (
             <Modal />
             {/* <button className="btn">add farmer</button> */}
           </div>
-          {/* <div className="emptyBox">
+          <div className="emptyBox">
 <img src={noproductImg} className="noProductImg" alt=""/>
  <p className="noProductsText">No data</p>
-</div> */}
-          <Table />
+</div>
+        
         </div>
       </div>
     </div>
