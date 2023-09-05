@@ -13,7 +13,7 @@ import LogoutButton from "../Logout/Logout";
 function Sidebar() {
   const menuItem = [
     {
-      path: "/admin",
+      path: "admin",
       linkName: "Overview",
       icon: <RiHome2Fill className="icon-medium" />,
     },
@@ -38,14 +38,14 @@ function Sidebar() {
         <div className="app-sidebar">
           {menuItem.map((item, index) => (
             <NavLink
-              to={item.path}
-              key={index}
-              className="barLink"
-              activeClassName="active"
-            >
-              <div className="app-sidebar-link">{item.icon}</div>
-              <span>{item.linkName}</span>
-            </NavLink>
+            to={item.path}
+            key={index}
+            className="barLink"
+            activeClassName="active" // Specify the active class name here
+          >
+            <div className="app-sidebar-link">{item.icon}</div>
+            <span>{item.linkName}</span>
+          </NavLink>
           ))}
           <span className="adminlogout">
             <img src={logoutImg} alt="" />

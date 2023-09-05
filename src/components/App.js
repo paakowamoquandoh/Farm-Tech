@@ -34,7 +34,7 @@ function App() {
           <Route path="/homepage" element={<Homepage />} />
           <Route path="/agentdashboard" element={<AgentDashboard />} />
           <Route path="/admin/*" element={<Admin />}>
-            <Route path="" element={<DashboardHome />} /> */
+            <Route path="admin" element={<DashboardHome />} /> */
             <Route path="admintable" element={<AdminTable />} />
             <Route path="reports" element={<Reports />} />
             {/* <Route path="/settings" element={<Settings />} /> */}
