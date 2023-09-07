@@ -1,5 +1,4 @@
-import {  } from "./report.css";
-import AdminsListTable from "../AgentsTable/AgentsTable";
+import "./report.css";
 import AdminModal from "../AdminModal/AdminModal";
 
 function Reports() {
@@ -11,7 +10,7 @@ function Reports() {
           <p>Admins Table</p>
           <span className="add"><AdminModal/>Add Admin</span>
         </div>
-        <AdminsListTable />
+     
         </div>
         </div>
         </>
