@@ -10,6 +10,7 @@
 
 .app-container .mediaNavbar{
     background-color: var(--app-container);
+    border: 1px solid green;
 }
 
 .app-content {
@@ -156,8 +157,11 @@
 .page-content {
     flex: 1;
     width: 100%;
+    border: 2px red solid;
+   
 }
 .app-sidebar {
+     border: 2px blue solid;
     padding: 40px 16px;
     display: flex;
     flex-direction: column;
