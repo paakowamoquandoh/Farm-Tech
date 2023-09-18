@@ -229,7 +229,7 @@
     flex: 2;
     background-color: var(--projects-section);
     border-radius: 32px;
-    padding: 32px 32px 0 32px;
+    padding: 12px 22px 0 22px;
     overflow: hidden;
     height: 100%;
     display: flex;
