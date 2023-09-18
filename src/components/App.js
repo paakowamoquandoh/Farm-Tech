@@ -9,7 +9,7 @@ import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import AgentForm from "../components/AddAgent/AddAgent";
 import Admin from "../components/AdminDashboard/Admin";
 import AdminLogin from "../components/Login/AdminLogin";
-import AdminTable from "./AdminTables/InvitedAgentsTable";
+import AdminTable from "../components/AdminTable/AdminTable";
 import Reports from "../components/Reports/Reports";
 import Homepage from "../components/Homepage/Homepage"
 import WelcomePage from "./WelcomePage/WelcomePage";
