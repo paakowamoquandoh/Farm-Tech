@@ -4,7 +4,7 @@ import "./lecturer.css";
 
 
 
-const Table = ({ rows, deleteRow, editRow }) => {
+const AdminTableData = ({ rows, deleteRow, editRow }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedRows, setSelectedRows] = useState([]);
   const [selectAll, setSelectAll] = useState(false);
@@ -155,4 +155,4 @@ const Table = ({ rows, deleteRow, editRow }) => {
   );
 };
 
-export default Table;
+export default AdminTableData;

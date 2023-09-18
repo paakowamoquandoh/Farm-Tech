@@ -1,5 +1,5 @@
 import React from "react";
-import noproductImg from "../../assets/icons/nopro.png"
+import noproductImg from "../../assets/icons/nodata.png"
 import "./addFarmer.css";
 import Modal from "../Modal/Modal";
 

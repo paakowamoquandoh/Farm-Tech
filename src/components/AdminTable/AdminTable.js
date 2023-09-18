@@ -5,11 +5,11 @@ import filterlines from "../../assets/icons/filter-lines.svg";
 import add from "../../assets/icons/user-plus-01.svg";
 import BasicButton from '../DashboardButtons/BasicButton';
 import DashDropdown from '../DashboardButtons/Dropdown';
-import Modal from '../Modals/AddLecturer';
-import uploadImage from "../../assets/icons/nolecturers.png"
+import AddAgentModal from '../Modal/AddLecturer';
+import uploadImage from "../../assets/icons/nodata.png"
 import './lecturer.css';
-import Table from './table';
-import CustomModal from "../Modals/UploadModal"
+import AdminTableData from './table';
+import CustomModal from "../Modal/UploadModal"
 import upload from "../../assets/icons/share-02.svg";
 
 
@@ -105,11 +105,11 @@ const AdminTable = () => {
   const filterOptions = ['Lecturers', 'Students', 'Recently added'];
 
   return (
-    <div className="m-auto w-full">
-      <div className="lg:flex lg:items-center lg:justify-between">
-        <div className="flex-1 min-w-0">
-          <h2 className="text-base font-semibold">
-            All Lecturers
+    <div className="adminArea">
+      <div className="adminTopbar">
+        <div className="buttonArea">
+          <h2 className="headText">
+            All Agents
           </h2>
         </div>
         <div className="dashdropdown">
@@ -125,7 +125,7 @@ const AdminTable = () => {
             options={filterOptions}
           />
           <button className='uploadButton' onClick={openModal}>
-            <img src={upload} alt="upload" />
+            <img className='smallIcon' src={upload} alt="upload" />
             Bulk Upload
           </button>
       <CustomModal isOpen={isOpen} onRequestClose={closeModal}>
@@ -151,20 +151,21 @@ const AdminTable = () => {
             <span className='csvOnly'>CSV Files only</span>            
           </form>
       </CustomModal>
-          <BasicButton onClick={() => setModalOpen(true)} name={'Add Lecturer'} icon1={<img src={add} alt='add' />} className={'dd-button1'} />
+          <BasicButton onClick={() => setModalOpen(true)} name={'Add Agent'} icon1={<img className="smallIcon" src={add} alt='add' />} className={'dd-button1'} />
 
         </div>
       </div>
       <div className="tableArea">
   {rows.length > 0 ? (
-  <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
+  <AdminTableData rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
   ) : (
     <div className="noData">
       <img src={uploadImage} alt="upload" /> 
+      <p className="nodataText">No Data, Click above to add data</p>
     </div>
   )}
   {modalOpen && (
-    <Modal
+    <AddAgentModal
       closeModal={() => {
         setModalOpen(false);
         setRowToEdit(null);
