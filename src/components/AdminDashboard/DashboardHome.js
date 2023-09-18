@@ -1,5 +1,8 @@
 import "./admin.css";
 import React from "react";
+import { BsArrowUp } from 'react-icons/bs';
+import { BsArrowDown } from 'react-icons/bs';
+import AnalyticsCard from "../AnalyticsCard/AnalyticsCard";
 
 
 function DashboardHome() {
@@ -42,6 +45,29 @@ function DashboardHome() {
               <rect x="3" y="14" width="7" height="7" /></svg>
           </button>
         </div>
+        
+      </div>
+      <div className="cardsHolder">
+          <AnalyticsCard
+          icon={<img src='' alt='card icon' />}
+          title={'Total Admins'}
+          total={2000}
+          percentage={100} icon2={<BsArrowUp className='green'/>} />
+           <AnalyticsCard
+          icon={<img src='' alt='card icon' />}
+          title={'Total Agents'}
+          total={100}
+          percentage={78} icon2={<BsArrowDown className='red'/>} />
+           <AnalyticsCard
+          icon={<img src='' alt='card icon' />}
+          title={'Total Farmers'}
+          total={800}
+          percentage={55} icon2={<BsArrowUp className='green'/>} />
+           <AnalyticsCard
+          icon={<img src='' alt='card icon' />}
+          title={'Total Databases'}
+          total={1500}
+          percentage={63} icon2={<BsArrowDown className='red'/>} />
       </div>
         </>
     )    
