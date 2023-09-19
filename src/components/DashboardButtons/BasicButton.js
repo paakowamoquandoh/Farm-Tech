@@ -5,10 +5,10 @@ function BasicButton({ name, icon1, className, onClick }) {
   
 
   return (
-    <button className={className} onClick={onClick}>
+    <label className={className} onClick={onClick}>
       {icon1}
       {name}
-    </button>
+    </label>
   );
 }
 

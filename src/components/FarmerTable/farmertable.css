@@ -1,0 +1,56 @@
+
+
+  .smallIcon{
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .farmertable {
+    overflow: hidden;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #D0D5DD;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    table-layout: auto;
+    overflow-x: auto;
+    text-align: start;
+    background-color: #ffffff41;
+  }
+
+
+  .noData{
+   margin: auto;
+  }
+  
+  .farmertable thead {
+    color: #222;
+  }
+
+  .farmertable th{
+    text-align: start;
+    color: var(--gray-500, #667085);
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.125rem;
+  }
+  
+  .farmertable th,
+  .farmertable td {
+    padding: 0.8rem;
+  }
+  
+  .farmertable td {
+    border-top: 0.5px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .farmertable tbody tr:hover {
+    background-color: #83a185;
+  }
+
+  

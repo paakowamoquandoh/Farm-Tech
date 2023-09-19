@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { BsFillTrashFill, BsFillPencilFill, BsArrowDown, BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import "./lecturer.css";
+import "./farmertable.css";
 
 
 
-const AdminTableData = ({ rows, deleteRow, editRow }) => {
+const FarmerTableData = ({ rows, deleteRow, editRow }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedRows, setSelectedRows] = useState([]);
   const [selectAll, setSelectAll] = useState(false);
@@ -155,4 +155,4 @@ const AdminTableData = ({ rows, deleteRow, editRow }) => {
   );
 };
 
-export default AdminTableData;
+export default FarmerTableData;

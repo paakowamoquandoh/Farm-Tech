@@ -7,14 +7,14 @@ import BasicButton from '../DashboardButtons/BasicButton';
 import DashDropdown from '../DashboardButtons/Dropdown';
 import AddAgentModal from '../Modal/AddLecturer';
 import uploadImage from "../../assets/icons/nodata.png"
-import './lecturer.css';
-import AdminTableData from './table';
+import './farmertable.css';
+import FarmerTableData from './table';
 import CustomModal from "../Modal/UploadModal"
 import upload from "../../assets/icons/share-02.svg";
 
 
 
-const AdminTable = () => {
+const FarmerTable = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -157,7 +157,7 @@ const AdminTable = () => {
       </div>
       <div className="tableArea">
   {rows.length > 0 ? (
-  <AdminTableData rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
+  <FarmerTableData rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
   ) : (
     <div className="noData">
       <img src={uploadImage} alt="upload" /> 
@@ -180,4 +180,4 @@ const AdminTable = () => {
   );
 };
 
-export default AdminTable;
+export default FarmerTable;

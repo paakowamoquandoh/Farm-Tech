@@ -20,6 +20,21 @@ line-height: 1.25rem;
     width: 1.1rem;
     height: 1.1rem;
   }
+
+  .admintable {
+    overflow: hidden;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #D0D5DD;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    table-layout: auto;
+    overflow-x: auto;
+    text-align: start;
+    background-color: #ffffff41;
+  }
   
   
   .table {
@@ -40,11 +55,11 @@ line-height: 1.25rem;
    margin: auto;
   }
   
-  .table thead {
+  .admintable thead {
     color: #222;
   }
 
-  .table th{
+  .admintable th{
     text-align: start;
     color: var(--gray-500, #667085);
 font-size: 0.75rem;
@@ -53,19 +68,19 @@ font-weight: 400;
 line-height: 1.125rem;
   }
   
-  .table th,
-  .table td {
-    padding: 0.5rem;
+  .admintable th,
+  .admintable td {
+    padding: 0.8rem;
   }
   
-  .table td {
+  .admintable td {
     border-top: 0.5px solid #ddd;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   
-  .table tbody tr:hover {
-    background-color: #eee;
+  .admintable tbody tr:hover {
+    background-color: #83a185;
   }
 
   .toprow{
@@ -85,6 +100,7 @@ line-height: 1.125rem;
     border: 1px solid #ddd;
     border-top: none;
     width: auto;
+    background-color: #ffffff41;
   }
 
   .pagination button{

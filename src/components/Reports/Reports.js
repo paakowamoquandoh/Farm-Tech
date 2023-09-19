@@ -1,18 +1,17 @@
+import FarmerTable from "../FarmerTable/FarmerTable";
 import "./report.css";
-import AdminModal from "../AdminModal/AdminModal";
 
 function Reports() {
     return(
         <>
-        <div className="projects-section">
-        <div>
+        <div className="">
+       
         <div className="projects-section-header">
-          <p>Admins Table</p>
-          <span className="add"><AdminModal/>Add Admin</span>
+          <FarmerTable/>
         </div>
      
         </div>
-        </div>
+      
         </>
     )    
 }

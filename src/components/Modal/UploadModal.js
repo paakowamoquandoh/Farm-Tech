@@ -1,7 +1,6 @@
 // src/components/Modal.tsx
 import React from 'react';
 import Modal from 'react-modal';
-import uploadIcon from "../../assets/icons/upload-cloud-01.png";
 import "./modal.css"
 
 const CustomModal = ({ isOpen, onRequestClose, children }) => {
