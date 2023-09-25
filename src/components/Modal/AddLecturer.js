@@ -54,7 +54,7 @@ const AddAgentModal = ({ closeModal, onSubmit, defaultValue }) => {
       <div className="addagentmodal">
         <form>
           <div className="form-group">
-            <span>Tell us a little about the Lecturer you are adding</span>
+            <span>Tell us a little about the Agent you are adding</span>
             <p>Please fill the following to get started</p>
             <div className="form-group">
             <label htmlFor="email">Email</label>
