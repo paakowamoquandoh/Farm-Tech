@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import {
   RiHome2Fill,
   RiTable2,
+  RiTableFill,
   RiPagesFill,
   RiSettings2Fill,
 } from "react-icons/ri";
@@ -21,6 +22,11 @@ function Sidebar() {
       path: "admintable",
       linkName: "Admins",
       icon: <RiTable2 className="icon-medium" />,
+    },
+    {
+      path: "agentsTable",
+      linkName: "Agents",
+      icon: <RiTableFill className="icon-medium" />,
     },
     {
       path: "reports",

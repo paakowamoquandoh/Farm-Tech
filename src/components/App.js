@@ -15,6 +15,7 @@ import Homepage from "../components/Homepage/Homepage"
 import WelcomePage from "./WelcomePage/WelcomePage";
 import AgentDashboard from "./AgentDashboard/AgentDashboard";
 import DashboardHome from "./AdminDashboard/DashboardHome";
+import AgentsTable from "./AgentsTable/AgentsTable";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/admin/*" element={<Admin />}>
             <Route path="admin" element={<DashboardHome />} /> */
             <Route path="admintable" element={<AdminTable />} />
+            <Route path="agentstable" element={<AgentsTable />} />
             <Route path="reports" element={<Reports />} />
             {/* <Route path="/settings" element={<Settings />} /> */}
           </Route>
