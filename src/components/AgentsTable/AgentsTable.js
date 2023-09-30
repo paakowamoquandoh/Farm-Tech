@@ -25,7 +25,12 @@ const AgentsTable = () => {
   };
   const [modalOpen, setModalOpen] = useState(false);
   const [rows, setRows] = useState([
-    {}
+    {
+      firstname: "Home",
+      lastname: "website",
+      idType: "Ghana Card",
+      email: "penilive@hotpen.org",
+    },
   ]);
   const [rowToEdit, setRowToEdit] = useState(null);
   const fileInputRef = useRef(null);

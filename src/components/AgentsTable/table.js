@@ -68,7 +68,7 @@ const AgentsTableData = ({ rows, deleteRow, editRow }) => {
     <div className="table-wrapper">
       
          <div>
-          <table className="admintable">
+         <table className="admintable">
         <thead>
           {selectAll && (
             <tr className="toprow">
@@ -95,9 +95,9 @@ const AgentsTableData = ({ rows, deleteRow, editRow }) => {
                 checked={selectAll}
                 onChange={toggleSelectAll}
               />
-              Lecturers<span><BsArrowDown/></span>
+              Name<span><BsArrowDown/></span>
             </th>
-            <th className="tablerow2">Agent Name</th>
+            <th className="tablerow2">Identification</th>
             <th className="tablerow3">Email address</th>
             <th className="tablerow4">Actions</th>
           </tr>
@@ -119,7 +119,7 @@ const AgentsTableData = ({ rows, deleteRow, editRow }) => {
                   <span className="initials">{initials}</span>
                   {row.firstname} {row.lastname}
                 </td>
-                <td>LEC 0001</td>
+                <td>{row.idType}</td>
                 <td>{row.email}</td>
                 <td>
                   <span className="actions">
