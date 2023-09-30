@@ -33,7 +33,8 @@ line-height: 1.25rem;
     table-layout: auto;
     overflow-x: auto;
     text-align: start;
-    background-color: #ffffff41;
+    color: black;
+    background-color: white;
   }
   
   
@@ -100,7 +101,7 @@ line-height: 1.125rem;
     border: 1px solid #ddd;
     border-top: none;
     width: auto;
-    background-color: #ffffff41;
+    background-color: white;
   }
 
   .pagination button{

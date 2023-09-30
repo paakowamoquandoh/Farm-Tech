@@ -6,7 +6,6 @@ import add from "../../assets/icons/user-plus-01.svg";
 import BasicButton from '../DashboardButtons/BasicButton';
 import DashDropdown from '../DashboardButtons/Dropdown';
 import AddAgentModal from '../Modal/AddLecturer';
-import uploadImage from "../../assets/icons/nodata.png"
 import './lecturer.css';
 import AdminTableData from './table';
 import CustomModal from "../Modal/UploadModal"
@@ -151,19 +150,14 @@ const AdminTable = () => {
             <span className='csvOnly'>CSV Files only</span>            
           </form>
       </CustomModal>
-          <BasicButton onClick={() => setModalOpen(true)} name={'Add Agent'} icon1={<img className="smallIcon" src={add} alt='add' />} className={'dd-button1'} />
+          <BasicButton onClick={() => setModalOpen(true)} name={'Add Farmer'} icon1={<img className="smallIcon" src={add} alt='add' />} className={'dd-button1'} />
 
         </div>
       </div>
       <div className="tableArea">
-  {rows.length > 0 ? (
+
   <AdminTableData rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
-  ) : (
-    <div className="noData">
-      <img src={uploadImage} alt="upload" /> 
-      <p className="nodataText">No Data, Click above to add data</p>
-    </div>
-  )}
+ 
   {modalOpen && (
     <AddAgentModal
       closeModal={() => {

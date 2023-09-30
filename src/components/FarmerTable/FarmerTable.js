@@ -6,7 +6,6 @@ import add from "../../assets/icons/user-plus-01.svg";
 import BasicButton from '../DashboardButtons/BasicButton';
 import DashDropdown from '../DashboardButtons/Dropdown';
 import AddAgentModal from '../Modal/AddLecturer';
-import uploadImage from "../../assets/icons/nodata.png"
 import './farmertable.css';
 import FarmerTableData from './table';
 import CustomModal from "../Modal/UploadModal"
@@ -156,14 +155,9 @@ const FarmerTable = () => {
         </div>
       </div>
       <div className="tableArea">
-  {rows.length > 0 ? (
+  
   <FarmerTableData rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
-  ) : (
-    <div className="noData">
-      <img src={uploadImage} alt="upload" /> 
-      <p className="nodataText">No Data, Click above to add data</p>
-    </div>
-  )}
+  
   {modalOpen && (
     <AddAgentModal
       closeModal={() => {
