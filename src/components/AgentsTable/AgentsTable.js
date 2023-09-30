@@ -1,15 +1,15 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import dropdown from "../../assets/icons/chevron-down.svg";
 import funnel from "../../assets/icons/filter-funnel-02.svg";
 import filterlines from "../../assets/icons/filter-lines.svg";
+import upload from "../../assets/icons/share-02.svg";
 import add from "../../assets/icons/user-plus-01.svg";
 import BasicButton from '../DashboardButtons/BasicButton';
 import DashDropdown from '../DashboardButtons/Dropdown';
 import AddAgentModal from '../Modal/AddLecturer';
+import CustomModal from "../Modal/UploadModal";
 import './lecturer.css';
 import AgentsTableData from './table';
-import CustomModal from "../Modal/UploadModal"
-import upload from "../../assets/icons/share-02.svg";
 
 
 
@@ -24,7 +24,9 @@ const AgentsTable = () => {
     setIsOpen(false);
   };
   const [modalOpen, setModalOpen] = useState(false);
-  const [rows, setRows] = useState([]);
+  const [rows, setRows] = useState([
+    {}
+  ]);
   const [rowToEdit, setRowToEdit] = useState(null);
   const fileInputRef = useRef(null);
   const [typeError, setTypeError] = useState(null);

@@ -5,10 +5,11 @@
     height: 100vh;
     margin-top: 0.6rem;
     color: var(--gray-900, #101828);
-font-family: Open Sans;
-font-size: 0.875rem;
+    font-family: "Inter", sans-serif;
+font-size: 0.9rem;
 font-style: normal;
 font-weight: 400;
+padding: 8px;
 line-height: 1.25rem;
   }
 
@@ -29,6 +30,7 @@ line-height: 1.25rem;
     white-space: nowrap;
     width: 100%;
     max-width: 100%;
+    padding: 8px;
     margin: auto;
     table-layout: auto;
     overflow-x: auto;
@@ -49,6 +51,7 @@ line-height: 1.25rem;
     max-width: 100%;
     margin: auto;
     table-layout: auto;
+    padding: 8px;
     overflow-x: auto;
   }
 
@@ -62,8 +65,8 @@ line-height: 1.25rem;
 
   .admintable th{
     text-align: start;
-    color: var(--gray-500, #667085);
-font-size: 0.75rem;
+    color: var(--gray-500, #000000);
+font-size: 0.9rem;
 font-style: normal;
 font-weight: 400;
 line-height: 1.125rem;
@@ -97,7 +100,7 @@ line-height: 1.125rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 0.5rem;
+    padding: 0.8rem 1rem;
     border: 1px solid #ddd;
     border-top: none;
     width: auto;
@@ -105,6 +108,7 @@ line-height: 1.125rem;
   }
 
   .pagination button{
+    margin-left: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;

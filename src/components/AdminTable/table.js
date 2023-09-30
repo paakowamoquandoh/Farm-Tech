@@ -95,9 +95,9 @@ const AdminTableData = ({ rows, deleteRow, editRow }) => {
                 checked={selectAll}
                 onChange={toggleSelectAll}
               />
-              Lecturers<span><BsArrowDown/></span>
+              Name<span><BsArrowDown/></span>
             </th>
-            <th className="tablerow2">Lecturer ID</th>
+            <th className="tablerow2">Identification</th>
             <th className="tablerow3">Email address</th>
             <th className="tablerow4">Actions</th>
           </tr>

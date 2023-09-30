@@ -97,7 +97,7 @@ const AgentsTableData = ({ rows, deleteRow, editRow }) => {
               />
               Lecturers<span><BsArrowDown/></span>
             </th>
-            <th className="tablerow2">Lecturer ID</th>
+            <th className="tablerow2">Agent Name</th>
             <th className="tablerow3">Email address</th>
             <th className="tablerow4">Actions</th>
           </tr>
