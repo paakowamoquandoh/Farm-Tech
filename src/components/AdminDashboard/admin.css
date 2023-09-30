@@ -254,6 +254,10 @@ width: 100%;
 font-weight: 600; 
   }
 
+  .analytics-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.1); /* Add your light green shadow style here */
+  }
+
 
 .projects-section {
     flex: 2;
@@ -268,7 +272,7 @@ font-weight: 600;
 .projects-section-line {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 32px;
 }
 .projects-section-header {
@@ -674,6 +678,8 @@ font-weight: 600;
     padding: 4px;
     display: none;
 }
+
+
 @media screen and (max-width: 980px) {
     .project-boxes.jsGridView .project-box-wrapper {
         width: 50%;

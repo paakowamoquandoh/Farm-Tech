@@ -28,6 +28,7 @@ const AdminTable = () => {
     {
       firstname: "Home",
       lastname: "website",
+      idType: "Ghana Card",
       email: "penilive@hotpen.org",
     },
   ]);

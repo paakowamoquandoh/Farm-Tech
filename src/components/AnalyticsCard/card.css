@@ -13,6 +13,10 @@ gap: 1.5rem;
 box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
 }
 
+.analytics-card:hover {
+  box-shadow: 4px 4px 6px rgba(153, 255, 153, 0.877);
+}
+
 .analytics-card-percentage{
     display: flex;
     flex-direction: row;
@@ -20,14 +24,13 @@ box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16,
     justify-content: space-between;
     gap: 0.4rem;
     color: var(--gray-500, #667085);
-font-family: Open Sans;
 font-size: 0.875rem;
 font-style: normal;
 font-weight: 400;
 line-height: 1.25rem; 
 }
 
-.analytics-card-percentage img{
+.analytics-card-percentage svg{
     width: 0.8rem;
 }
 
@@ -41,7 +44,6 @@ line-height: 1.25rem;
 
 .analytics-card-title{
  color: var(--gray-900, #101828);
-font-family: Open Sans;
 font-size: 1rem;
 font-style: normal;
 font-weight: 500;
@@ -50,12 +52,12 @@ line-height: 1.5rem;
 
 .analytics-card-total{
     color: var(--gray-900, #101828);
-font-family: Open Sans;
 font-size: 2rem;
 font-style: normal;
 font-weight: 600;
-line-height: 0.75rem;
-letter-spacing: -0.045rem;
+line-height: 2rem;
+letter-spacing: 0.045rem;
+margin-bottom: 0.5rem;
 }
 
 .analytics-card-icon{
@@ -87,12 +89,15 @@ align-items: center;
   
   .red{
     color: red;
+    font-weight: bold;
+
   }
   
   .cardsHolder svg{
-    width: 4rem;
-    height: 4rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
+  
 
 @media screen and (max-width: 1250px) {
     

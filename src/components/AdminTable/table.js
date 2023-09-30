@@ -119,7 +119,7 @@ const AdminTableData = ({ rows, deleteRow, editRow }) => {
                   <span className="initials">{initials}</span>
                   {row.firstname} {row.lastname}
                 </td>
-                <td>LEC 0001</td>
+                <td>{row.idType}</td>
                 <td>{row.email}</td>
                 <td>
                   <span className="actions">
