@@ -14,7 +14,7 @@ function DashboardHome() {
         <>
         <div className="projects-section-header">
         <p>Admin Dashboard</p>
-        <p className="time">Go to Settings</p>
+        <p className="time">General data</p>
       </div>
       <div className="projects-section-line">
       <div className="cardsHolder">
