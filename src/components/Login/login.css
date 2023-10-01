@@ -13,7 +13,26 @@
 }
 
 .adminloginBtn{
-    background-color: green;
+    background: rgb(31, 31, 31);
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 0.5rem;
+}
+.form{
+    width: 35rem;
+    padding: 5rem 1.2rem 1rem 1.2rem;
+    background-color: rgba(252, 252, 251, 0.525);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .adminformBody{
@@ -21,9 +40,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background: #1f2937;
+    background: #4f5256;
 }
 
 .submitButton a, #applicationFormBtn a{
