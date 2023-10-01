@@ -1,6 +1,5 @@
 import React, { useState, useRef  } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import {  Button, Overlay, Popover } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Hero from "../Hero/Hero"
 import Footer from "../Footer/Footer"
@@ -10,16 +9,8 @@ import HomeImg from "../../assets/images/homepage/back.jpg"
 
 function WelcomePage() {
 
-    const [show, setShow] = useState(false);
-    const [target, setTarget] = useState(null);
     const ref = useRef(null);
     
-  
-    const handleClick = (event) => {
-      setShow(!show);
-      setTarget(event.target);
-    };
-  
     const [toggleMenu, setToggleMenu] = useState(false);
     return(
         <>
@@ -35,30 +26,11 @@ function WelcomePage() {
         </div>
         <div className="mediaNavbar-sign">
         <div ref={ref}>
-        <Button onClick={handleClick} className="signIn">
-            Log In As
-        </Button>
-  
-        <Overlay
-          show={show}
-          target={target}
-          placement="bottom"
-          container={ref}
-          containerPadding={20}
-        >
-          <Popover id="popover-contained">
-            <Popover.Body>
-              <Link to="/login" className="agentsignIn">
-               Agent
-               </Link>
-            </Popover.Body>
-            <Popover.Body>
-            <Link to="/adminlogin" className="adminsignIn">
-                Admin
-               </Link>
-            </Popover.Body>
-          </Popover>
-        </Overlay>
+      
+        <Link to="/login" className="agentsignIn">
+               Login
+         </Link>
+      
          </div>
         </div>
         <div className="mediaNavbar-menu">
