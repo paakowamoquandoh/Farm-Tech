@@ -24,7 +24,14 @@ const FarmerTable = () => {
     setIsOpen(false);
   };
   const [modalOpen, setModalOpen] = useState(false);
-  const [rows, setRows] = useState([]);
+  const [rows, setRows] = useState([
+    {
+      firstname: "Home",
+      lastname: "website",
+      idType: "Ghana Card",
+      email: "penilive@hotpen.org",
+    },
+  ]);
   const [rowToEdit, setRowToEdit] = useState(null);
   const fileInputRef = useRef(null);
   const [typeError, setTypeError] = useState(null);
