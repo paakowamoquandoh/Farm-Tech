@@ -108,7 +108,7 @@ const FarmerTable = () => {
   const defaultValue = rowToEdit !== null ? rows[rowToEdit] : undefined;
 
   const sortOptions = ['Ascending', 'Descending', 'Recently added'];
-  const filterOptions = ['Lecturers', 'Students', 'Recently added'];
+  const filterOptions = ['Farmers', 'Agents', 'Recently added'];
 
   return (
     <div className="adminArea">
