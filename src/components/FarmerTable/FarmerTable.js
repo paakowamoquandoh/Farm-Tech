@@ -150,7 +150,7 @@ const FarmerTable = () => {
             <span className='csvOnly'>CSV Files only</span>            
           </form>
       </CustomModal>
-          <BasicButton onClick={() => setModalOpen(true)} name={'Add Agent'} icon1={<img className="smallIcon" src={add} alt='add' />} className={'dd-button1'} />
+          <BasicButton onClick={() => setModalOpen(true)} name={'Add Farmer'} icon1={<img className="smallIcon" src={add} alt='add' />} className={'dd-button1'} />
 
         </div>
       </div>

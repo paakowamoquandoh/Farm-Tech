@@ -19,6 +19,11 @@ function Sidebar() {
       icon: <RiHome2Fill className="icon-medium" />,
     },
     {
+      path: "reports",
+      linkName: "Farmer",
+      icon: <RiPagesFill className="icon-medium" />,
+    },
+    {
       path: "admintable",
       linkName: "Admins",
       icon: <RiTable2 className="icon-medium" />,
@@ -27,11 +32,6 @@ function Sidebar() {
       path: "agentsTable",
       linkName: "Agents",
       icon: <RiTableFill className="icon-medium" />,
-    },
-    {
-      path: "reports",
-      linkName: "Farmer",
-      icon: <RiPagesFill className="icon-medium" />,
     },
     {
       path: "settings",
